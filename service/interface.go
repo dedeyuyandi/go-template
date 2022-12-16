@@ -1,7 +1,7 @@
 package service
 
 import (
-	"io"
+	"context"
 
 	"github.com/dedeyuyandi/go-template/model"
 )

@@ -1,5 +1,11 @@
 package repository
 
+import (
+	"io"
+
+	"github.com/dedeyuyandi/go-template/model"
+)
+
 type RedisReadWriter interface {
 	io.Closer
 

@@ -1,17 +1,15 @@
 package service
 
-import (
-	"github.com/dedeyuyandi/go-template"
-)
+import "github.com/dedeyuyandi/go-template/repository"
 
 type gbTemplateService struct {
-	redis repository.RedisConfiguration
+	redis repository.RedisReadWriter
 }
 
 func NewTemplateService(
-	redis repository.Redis,
+	redis repository.RedisReadWriter,
 ) gbTemplateService {
-	return gbOrderStreamingService{
+	return gbTemplateService{
 		redis: redis,
 	}
 }
